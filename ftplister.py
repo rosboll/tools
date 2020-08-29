@@ -4,7 +4,7 @@ from ftplib import FTP
 from sys import argv
 # from getopt import getopt
 
-# Read IP addresses from file
+# Read IP addresses from file (one IP per row)
 with open(argv[1],'r') as infile:
 	# IPs = infile.readlines()
 	IPs = [line.strip() for line in infile]
