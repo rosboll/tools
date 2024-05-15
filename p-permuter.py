@@ -24,7 +24,7 @@ with open(argv[2],'w') as outfile:
         # start by writing the original string to the output fil
         outfile.write(pword+"\n")
         
-        # prepend and append all numbers between startIterator and stopIterator. Also add special characters from the specials varable 
+        # prepend and append all numbers from startIterator to stopIterator. Also add special characters from the specials array. 
         for j in range(startIterator,stopIterator+1):
             outfile.write(pword + str(j) + "\n")
             outfile.write(str(j) + pword + "\n")
@@ -34,7 +34,7 @@ with open(argv[2],'w') as outfile:
                 outfile.write(str(j) + s + pword + "\n")
                 outfile.write(s + str(j) + pword + "\n")
         
-        # prepend and append all years between fromYear and stopYear. Also add special characters from the specials varable 
+        # prepend and append all years from fromYear to toYear. Also add special characters from the specials array. 
         for year in range(fromYear,toYear+1):
             outfile.write(pword + str(year) + "\n")
             outfile.write(str(year) + pword + "\n")
@@ -45,7 +45,4 @@ with open(argv[2],'w') as outfile:
                 outfile.write(s + str(year) + pword + "\n")
 
 
-    #                for i in range(1,12):
-    #                    outfile.write(pword+str(year)+str(i)+"\n")
-    #                    outfile.write(str(year)+str(i)+pword+"\n")
     outfile.close()
