@@ -5,7 +5,8 @@
 # Like this:
 # brute domain.com thedc.domain.com users.txt passfile 8 31 | tee -a spray.out  
 # template:
-# kerbrute passwordspray -d domain.com --dc thedc users.txt 'Password2022!' | tee -a spray.out  
+# kerbrute passwordspray -d domain.com --dc thedc users.txt 'Password2022!' | tee -a spray.out
+# Make sure to have kerbrute in the path.
 
 domain=$1  
 dc=$2  
