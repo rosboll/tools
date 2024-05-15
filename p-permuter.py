@@ -12,7 +12,7 @@ specials        = ['!','.','-','_','@',]
 from sys import argv
 # from getopt import getopt
 
-# infile is the list of passwords that should be permutated, provided by the user
+# infile is the list of passwords that should be expanded, provided by the user
 with open(argv[1],'r') as infile:
     # IPs = infile.readlines()
     passwords = [line.strip() for line in infile]
