@@ -17,4 +17,4 @@ Takes a host, username and a password file and brute force guesses password + a 
 Brute force guesses all three-character directories on a host. E.g. from example.com/aaa to example.com/zzz.
 
 ## headers.py
-Takes a list of hosts and lists their HTTP response headers. 
+Takes a list of hosts, makes a GET to the web root and lists "Server" response headers. 
