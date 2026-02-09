@@ -21,7 +21,7 @@ with open(argv[1],'r') as infile:
 # prepend and append numbers
 with open(argv[2],'w') as outfile:
     for pword in passwords:
-        # start by writing the original string to the output fil
+        # start by writing the original string to the output file
         outfile.write(pword+"\n")
         
         # prepend and append all numbers from startIterator to stopIterator. Also add special characters from the specials array. 
