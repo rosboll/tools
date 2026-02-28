@@ -17,4 +17,7 @@ Takes a host, username and a password file and brute force guesses password + a 
 Brute force guesses all three-character directories on a host. E.g. from example.com/aaa to example.com/zzz.
 
 ## headers.py
-Takes a list of hosts, makes a GET to the web root and lists "Server" response headers. 
+Takes a list of hosts, makes a GET to the web root and lists "Server" response headers.
+
+## endpointSweep.py
+Takes a file of `METHOD /path` lines and sweeps them against a base URL, displaying results in a color-coded table (green=2xx, red=4xx/5xx). Supports API key and Bearer token auth via environment variables, routes through Burp proxy by default (use `--no-proxy` to bypass), and allows filtering by HTTP method. Response bodies are truncated with an ellipsis indicator; truncation length is configurable with `--body-length`.
