@@ -1,4 +1,4 @@
-# My collection of personal pentest tools
+# A repo with some utilities 
 Some scripts written to learn python, others to be more efficient during pentesting. Put on github to learn git and github.
 
 ## p-permuter.py
