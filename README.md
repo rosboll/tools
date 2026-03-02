@@ -21,3 +21,10 @@ Takes a list of hosts, makes a GET to the web root and lists "Server" response h
 
 ## endpointSweep.py
 Takes a file of `METHOD /path` lines and sweeps them against a base URL, displaying results in a color-coded table (green=2xx, red=4xx/5xx). Supports API key and Bearer token auth via environment variables, routes through Burp proxy by default (use `--no-proxy` to bypass), and allows filtering by HTTP method. Response bodies are truncated with an ellipsis indicator; truncation length is configurable with `--body-length`.
+
+## listoperations.jq
+Parses a Swagger/OpenAPI JSON file and lists all defined endpoints as tab-separated lines: `METHOD`, `path`, and summary. Deprecated operations are flagged with `(deprecated)`. Non-HTTP-verb keys and `x-` extension paths are filtered out.
+
+```
+jq -rf listoperations.jq swagger.json
+```
